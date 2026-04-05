@@ -1,9 +1,10 @@
 import React from "react";
+import { Text, View } from "react-native";
 
-import {Text} from 'react-native';
-
-export default function Login (){
-    return(
-        <Text>Ola Mundo</Text>
-    )
+export default function Login() {
+  return (
+    <View>
+      <Text>Ola Mundo</Text>
+    </View>
+  );
 }
