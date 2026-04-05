@@ -1,21 +1,17 @@
-import { StatusBar } from 'expo-status-bar';
+import './gesture-handler';
 import { StyleSheet, Text, View } from 'react-native';
+import {NavigationContainer} from '@react-navigation/native';
+import Routes from './src/routes/index.routes';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Ol</Text>
-      <StatusBar style="auto" />
-      <Login />
-    </View>
+    <NavigationContainer>
+      <Routes />
+    </NavigationContainer>
   );
 }
-
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    flex: 1
   },
 });
